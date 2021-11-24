@@ -10,7 +10,6 @@ namespace TARpe19TodoApp.Data
 {
     public class ApiDbContext : IdentityDbContext
     {
-        public DbSet<ItemData> Items { get; set; }
 
         public DbSet<TODOItem> TaskItems { get; set; }
 
@@ -19,6 +18,6 @@ namespace TARpe19TodoApp.Data
 
         }
 
-        public DbSet<TARpe19TodoApp.Models.TODOHomework> TODOHomework { get; set; }
+        public DbSet<TODOHomework> TODOHomework { get; set; }
     }
 }
