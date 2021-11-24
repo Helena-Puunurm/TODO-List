@@ -12,6 +12,8 @@ namespace TARpe19TodoApp.Data
     {
         public DbSet<ItemData> Items { get; set; }
 
+        public DbSet<TODOItem> TaskItems { get; set; }
+
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
         {
 
